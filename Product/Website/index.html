@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tello Island -</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Tello Island</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a>
+          <ul>
+              <li><a href="#">Budaya Lokal</a></li>
+              <li><a href="#">Tempat Wisata</a></li>
+          </ul>
+      </li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <div class="page1">
+        <h1>WELCOME TO TELLO ISLAND</h1>
+        <h3>Let's go now</h3>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <div class="content1">
+      <div class="img1"><img src="/img1.jpg"></div>
+        <p>Pulau Tello merupakan gugusan kepulauan di
+        Kabupaten Nias Selatan, Provinsi Sumatra
+        Utara, Indonesia. Pulau Tello juga merupakan
+        ibu kota kecamatan dari Pulau-Pulau Batu,
+        Nias Selatan, salah satu kecamatan yang ada di
+        Kabupaten Nias Selatan, Provinsi Sumatra
+        Utara. Jumlah penduduk di pulau tello
+        sebanyak 8000 jiwa dengan luas wilayah 18
+        km, memiliki 101 kepulauan dan mempunyai
+        23 desa dengan satu kelurahan, dan memiliki
+        Lasondre Airport.
+    </br></br>
+        Pulau tello Juga memiliki adat budaya lokal
+        yang sangat di kagumkan oleh para wisatawan
+        asing atau beberapa orang yang datang ke
+        pulau tello.</p>
+    </div>
+  </div>
+
+  <div class="budaya-lokal">
+    <div class="content2">
+      <h3>Budaya Lokal</h3>
+      <p>Pulau Tello merupakan gugusan kepulauan di
+        Kabupaten Nias Selatan, Provinsi Sumatra
+        Utara, Indonesia. Pulau Tello juga merupakan
+        ibu kota kecamatan dari Pulau-Pulau Batu,
+        Nias Selatan, salah satu kecamatan yang ada di
+        Kabupaten Nias Selatan, Provinsi Sumatra
+        Utara. Jumlah penduduk di pulau tello
+        sebanyak 8000 jiwa dengan luas wilayah 18
+        km, memiliki 101 kepulauan dan mempunyai
+        23 desa dengan satu kelurahan, dan memiliki
+        Lasondre Airport.
+    </br></br>
+        Pulau tello Juga memiliki adat budaya lokal
+        yang sangat di kagumkan oleh para wisatawan
+        asing atau beberapa orang yang datang ke
+        pulau tello.</p>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>
