@@ -82,7 +82,7 @@ html{
 }
 .banner{
   height: 100vh;
-  background: url("/Assets/Home-bg.png") no-repeat;
+  background: url("./Assets/Home-bg.png") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
