@@ -54,6 +54,7 @@ html{
   display: inline-flex;
 }
 .menu-list li{
+  padding-right: 20px;
   list-style: none;
 }
 .menu-list li a{
@@ -63,6 +64,9 @@ html{
   margin-left: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+.menu-list .ab:hover{
+  background-color: #1b1b1b;
 }
 .menu-list li a:hover{
   color: #007bff;
@@ -118,13 +122,155 @@ html{
 .about img{
   padding-left: 10%;
 }
-.content2{
-  background-color: blue;
+.budaya{
+  background-color: #243763;
   height: 100vh;
 }
-.content2 h3{
+.budaya h3{
   text-align: center;
-  margin-top: 36px;
+  font-size: 40px;
+  font-weight: 550;
+  color: aliceblue;
+  padding-top: 12vh;
+}
+.budaya h4{
+  margin-top: 10px;
+  font-size: larger;
+}
+.content2{
+  display: flex;
+  padding-top: 3vh;
+  gap: 14px;
+  color: aliceblue;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+}
+.content2 p{
+  text-align: justify;
+  font-size: 12px;
+  max-width: 900px;
+  margin: 5px 20px 25px 20px;
+}
+.content2 .tari-baluse{
+  background-color: #151f36;
+}
+.content2 .tari-baluse p{
+  font-size: 14px;
+}
+.content2 .pakaian-adat{
+  background-color: #151f36;
+}
+.content2 .tari-miti{
+  background-color: #151f36;
+}
+.content2 .tari-miti p{
+  font-size: 16px;
+}
+.content2 img{
+  max-height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tempat-wisata{
+  height: 100vh;
+  background-color: aliceblue;
+}
+.content3{
+  display: flex;
+  padding-top: 18vh;
+  color: #1b1b1b;
+  justify-content: space-between;
+  margin: 0 25px 0 30px;
+}
+.tempat-wisata .desc{
+  max-width: 50vh;
+  font-size: 14px;
+}
+.desc{
+  margin-left: 20px;
+  text-align: justify;
+}
+.desc h2{
+  margin-top: 20px;
+  text-align: center;
+}
+.desc p{
+  padding-top: 10px;
+}
+.images{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+  margin-top: 20px;
+  margin-right: 8px;
+}
+.images h4{
+  text-align: center;
+}
+.images img{
+  height: 150px;
+  width: 250px;
+  margin-top: 10px;
+}
+.gallery{
+  height: 100vh;
+  background-color: #243763;
+  color: aliceblue;
+}
+.gallery h2{
+  padding-top: 14vh;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+.g-images{
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-gap: 15px;
+  padding: 15px;
+  margin-top: 20px; 
+  margin-left: 70px; 
+}
+.gallery img{
+  height: 200px;
+  width: 350px;
+}
+.contact{
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+.contact .content6{
+  padding-top: 17vh;
+  color: #1b1b1b;
+}
+.contact h2{
+  font-size: 36px;
+  font-weight: 550;
+}
+.contact .contact-us p{
+  margin: 20px 200px 15px 200px;
+  font-size: 14px;
+}
+.iconn{
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 85px;
+  margin-left: 100px;
+  justify-content: space-around;
+}
+.iconn p{
+  text-align: center;
+}
+.iconn img{
+  max-height: 60px;
+}
+.mid-icon{
+  margin-left: 175px;
+  margin-right: 100px;
+}
+.copyright p{
+  text-align: center;
 }
 .icon{
   color: #fff;
